@@ -1,4 +1,4 @@
-# 🤖 RuleBot — Rule-Based AI Chatbot
+# RuleBot — Rule-Based AI Chatbot
 
 A simple, dependency-free rule-based chatbot built in Python. This is **Project 1**
 of the DecodeLabs AI Industrial Training Kit — the foundation phase focused on
@@ -16,7 +16,7 @@ control flow and logic before moving into machine learning-based systems.
 - **Graceful fallback** — a friendly default reply for anything it doesn't recognize
 - **Unit tested** with Python's built-in `unittest`
 
-## 🗂 Project Structure
+## Project Structure
 
 ```
 rule-based-ai-chatbot/
@@ -28,8 +28,6 @@ rule-based-ai-chatbot/
 ├── LICENSE
 └── README.md
 ```
-
-## 🚀 Getting Started
 
 ### Prerequisites
 - Python 3.7+
@@ -90,19 +88,6 @@ Using a dictionary keeps all rules as data (not nested code), so adding a
 new intent is as simple as adding one entry to `INTENTS` in
 `knowledge_base.py` — no new branches required.
 
-## 🔧 Extending the Bot
-
-Want to add a new intent? Open `knowledge_base.py` and add an entry:
-
-```python
-INTENTS["weather"] = {
-    "keywords": ["weather", "forecast", "rain"],
-    "responses": [
-        "I can't check live weather yet, but I hope it's sunny where you are!",
-    ],
-}
-```
-
 Other ideas to extend this project:
 - Add a **conversation memory** so the bot remembers the user's name
 - Add **nested conditions** for multi-turn intents (e.g. asking a follow-up question)
@@ -110,17 +95,13 @@ Other ideas to extend this project:
 - Log conversations to a file for later review
 - Use this as the deterministic "guardrail" layer in front of an LLM (see Project 2)
 
-## 📌 Roadmap: From Rules to Vectors
+## Roadmap: From Rules to Vectors
 
 This project uses **exact keyword matching** — a rigid, discrete mapping.
 The next step in the DecodeLabs track (Project 2) moves toward **semantic
 matching** using vector embeddings, so the bot can understand meaning and
 paraphrasing rather than only exact keywords.
 
-## 📄 License
-
-This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
-
-## 🙌 Credits
+## Credits
 
 Built as part of the **DecodeLabs AI Industrial Training Kit — Batch 2026**.
